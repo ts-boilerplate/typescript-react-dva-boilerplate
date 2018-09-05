@@ -9,6 +9,8 @@ cd typescript-react-dva-boilerplate
 npm install
 npm start
 ```
+
+
 ```
 > Note: `package.json` only consists of 2 basic properties: `devDependencies` and `scripts`, other remaining properties like `name`, `description` can be added freely.  
 Current `package.json`:
@@ -18,6 +20,8 @@ Current `package.json`:
 >  "devDependencies": {...}
 >}
 >```
+
+
 
 ## Contributing
 If you found somewhere in codes to be improved or fixed, or just make a suggestion, don't hesitate to send a pull request
