@@ -10,8 +10,6 @@ npm install
 npm start
 ```
 
-
-```
 > Note: `package.json` only consists of 2 basic properties: `devDependencies` and `scripts`, other remaining properties like `name`, `description` can be added freely.  
 Current `package.json`:
 >```js
