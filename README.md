@@ -1,7 +1,7 @@
 A boilerplate of typescript, react and dva, supporting HMR
 
 
-## One Step to Get Started
+## 1 Step to Get Started
 Copy all following codes, paste them on your terminal, **press enter** even though terminal has started cloning.
 ```bash
 git clone https://github.com/ts-boilerplate/typescript-react-dva-boilerplate.git
