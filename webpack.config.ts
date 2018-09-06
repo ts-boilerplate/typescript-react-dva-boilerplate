@@ -2,7 +2,6 @@ import * as PATH from 'path'
 const { resolve } = PATH
 const webpack = require( 'webpack' )
 const CopyWebpackPlugin = require( "copy-webpack-plugin" )
-const CleanWebpackPlugin = require( "clean-webpack-plugin" )
 import { __DEV__ } from "./server/global"
 import { OUTPUT_FILE_NAME, ENTRY, OUTPUT, ENTRY_INDEX_HTML, OUTPUT_INDEX_HTML } from './server/constants';
 
@@ -49,9 +48,13 @@ const webpackClientConfig = {
       }
     ],
    ),
-
-   new webpack.HotModuleReplacementPlugin()
-  ]
+  ].concat(
+    __DEV__ ?
+     [
+      new webpack.HotModuleReplacementPlugin()
+    ]:
+    []    
+  )
 }
 
 
